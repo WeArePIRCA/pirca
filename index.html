@@ -7,7 +7,12 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>PIRCA: People In Resistance to Creeping Autocracy</title>
 <link href="style.css" rel="stylesheet"/>
-</head>
+<style>
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        </style></head>
 <body style="text-align: center; margin: 0 auto; max-width: 800px;">
 <header>
 <div class="logo"> <a href="about.html"><button class="nav-btn" style="background-color: white; color: black; border: 2px solid black;">About PIRCA</button></a>
@@ -20,10 +25,10 @@
 <button class="nav-btn">Explore the Mission</button>
 </div>
 </header>
-<section id="about">
+<section id="about"><div style="display: flex; align-items: center; justify-content: space-between;">
 <h3>What Is PIRCA?</h3>
 <p>PIRCA is a research and civil defense initiative committed to exposing creeping autocracy, narrative manipulation, and disinformation campaigns in real time.</p>
-</section>
+<div class="spinner" style="height: 100%; aspect-ratio: 1 / 1; border: 6px solid #f3f3f3; border-top: 6px solid #283618; border-radius: 50%; animation: spin 1s linear infinite;"></div></div></section>
 <section id="tools">
 <h3>How We Defend Truth</h3>
 <h4>DUB-O-TAKE Suite</h4>
