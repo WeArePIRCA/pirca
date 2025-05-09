@@ -1,0 +1,10 @@
+Recommended GitHub Topics for the PIRCA repository:
+
+pirca
+autocracy-resistance
+digital-forensics
+open-source-disinfo
+public-vigilance
+narrative-intelligence
+civic-technology
+opensource-watchdog
