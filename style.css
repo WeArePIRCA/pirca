@@ -1,0 +1,92 @@
+
+:root {
+    --font-main: 'Arial', sans-serif;
+    --color-text: #111;
+    --color-background: #f8f8f8;
+    --color-accent: #222;
+    --color-cta: #0055ff;
+    --color-cta-text: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text: #f8f8f8;
+        --color-background: #111;
+        --color-accent: #eee;
+        --color-cta: #3399ff;
+        --color-cta-text: #000;
+    }
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--color-accent);
+    color: var(--color-background);
+}
+
+header .cta-buttons button {
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-cta);
+    color: var(--color-cta-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+section {
+    padding: 2rem;
+}
+
+.toolset, .mission {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.tool, .mission {
+    border: 1px solid var(--color-text);
+    padding: 1rem;
+    border-radius: 8px;
+    width: 250px;
+    background-color: var(--color-background);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 1rem;
+}
+
+form input, form select, form button {
+    padding: 0.75rem;
+    border: 1px solid var(--color-text);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: var(--color-cta);
+    color: var(--color-cta-text);
+    border: none;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--color-accent);
+    color: var(--color-background);
+}
