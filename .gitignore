@@ -1,0 +1,21 @@
+# PIRCA .gitignore
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Build and runtime artifacts
+dist/
+node_modules/
+.env
+*.log
+*.zip
+*.bak
+*.tmp
+
+# Optional files
+meta_tags_pirca.html
