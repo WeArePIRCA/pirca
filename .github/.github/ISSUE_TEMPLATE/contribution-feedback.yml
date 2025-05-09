@@ -1,0 +1,30 @@
+name: Contribution or Feedback
+description: Suggest changes, report bugs, or provide ideas for PIRCA.
+labels: ["feedback", "community"]
+body:
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Type of Contribution
+      options:
+        - Design feedback
+        - Bug report
+        - Accessibility issue
+        - Licensing or usage concern
+        - New idea or feature
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Describe your issue or suggestion
+      placeholder: Tell us what happened, or what you propose.
+    validations:
+      required: true
+
+  - type: input
+    id: optional_links
+    attributes:
+      label: Related links (if any)
+      placeholder: Paste GitHub links, screenshots, docs, etc.
