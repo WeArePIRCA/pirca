@@ -1,0 +1,25 @@
+PIRCA .gitignore (for reference if .gitignore is hidden on iOS/macOS)
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor and IDE config folders
+.vscode/
+.idea/
+
+# Build and runtime artifacts
+dist/
+build/
+node_modules/
+.env
+.cache/
+coverage/
+*.log
+*.zip
+*.bak
+*.swp
+*.tmp
+
+# Optional exclusions
+meta_tags_pirca.html
