@@ -1,0 +1,38 @@
+name: Bug Report
+description: Report an error or malfunction in the PIRCA site or future DUB-O-TAKE tools.
+labels: ["bug", "triage"]
+body:
+  - type: dropdown
+    id: bug_type
+    attributes:
+      label: Type of Bug
+      options:
+        - Layout or visual issue
+        - Accessibility error (screen reader, contrast, etc.)
+        - Broken link or form
+        - JavaScript malfunction
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: Page or Component
+      placeholder: e.g. index.html or signal-skew module
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: Describe the issue
+      placeholder: Include steps to reproduce, expected vs. actual behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment (Optional)
+      placeholder: Browser, OS, device, screen size, etc.
